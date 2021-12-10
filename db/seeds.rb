@@ -35,7 +35,13 @@ csv.each do |row|
   else
     score.away_team_cover = "No"
   end
+  if score.date.between?(2021 - 11 - 20, 2021 - 11 - 23)
+    puts "date is between"
+  else
+    puts "date is not between"
+  end
   score.save
+
   puts "#{score.home_team} (#{score.closing_spread_home}) vs.  #{score.away_team} (#{score.closing_spread_away}) on #{score.date}. 
   Final Score #{score.home_team}-#{score.home_score} to #{score.away_team}-#{score.away_score}.
   Did the home team cover? #{score.home_team_cover}
