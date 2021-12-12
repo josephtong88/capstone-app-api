@@ -29,3 +29,6 @@ GET http://localhost:3000/teams
 ###
 GET http://localhost:3000/teams/1
 
+###
+GET http://localhost:3000/showteams/1
+
