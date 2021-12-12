@@ -1,0 +1,31 @@
+###
+GET http://localhost:3000/scores
+
+###
+GET http://localhost:3000/scores/1
+
+
+###
+POST http://localhost:3000/scores
+content-type: application/json
+
+{
+  "input_date": "2021-11-29",
+  "input_home_team": "Washington Football Team",
+  "input_away_team": "Seattle Seahawks",
+  "input_home_score":17,
+  "input_away_score":15,
+  "input_closing_spread_home": 1,
+  "input_closing_spread_away": -1
+}
+
+###
+ DELETE http://localhost:3000/scores/2052
+
+
+###
+GET http://localhost:3000/teams
+
+###
+GET http://localhost:3000/teams/1
+
