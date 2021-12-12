@@ -1,11 +1,3 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
-# ISO-8859-1
 require "csv"
 
 csv_text = File.read(Rails.root.join("lib", "seeds", "nfl.csv"))
@@ -35,11 +27,7 @@ csv.each do |row|
   else
     score.away_team_cover = "No"
   end
-  if score.date.between?(2021 - 11 - 20, 2021 - 11 - 23)
-    puts "date is between"
-  else
-    puts "date is not between"
-  end
+
   score.save
 
   puts "#{score.home_team} (#{score.closing_spread_home}) vs.  #{score.away_team} (#{score.closing_spread_away}) on #{score.date}. 
