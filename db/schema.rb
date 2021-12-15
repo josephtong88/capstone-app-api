@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_12_12_152554) do
+ActiveRecord::Schema.define(version: 2021_12_15_032048) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 2021_12_12_152554) do
     t.string "away_team_cover"
     t.string "home_team_id"
     t.string "away_team_id"
-    t.string "season"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
