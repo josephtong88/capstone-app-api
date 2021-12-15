@@ -20,7 +20,7 @@ content-type: application/json
 }
 
 ###
- DELETE http://localhost:3000/scores/2052
+ DELETE http://localhost:3000/scores/2053
 
 
 ###
@@ -31,4 +31,15 @@ GET http://localhost:3000/teams/1
 
 ###
 GET http://localhost:3000/showteams/1
+
+###
+GET http://localhost:3000/records/10
+
+###
+GET http://localhost:3000/homerecords/10
+
+###
+GET http://localhost:3000/awayrecords/10
+
+
 

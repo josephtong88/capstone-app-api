@@ -43,12 +43,6 @@ csv.each do |row|
   score.home_team_id = Team.find_by(team_name: score.home_team).id
   score.away_team_id = Team.find_by(team_name: score.away_team).id
   score.save
-
-  puts "#{score.home_team} (#{score.closing_spread_home}) vs.  #{score.away_team} (#{score.closing_spread_away}) on #{score.date}.
-  Final Score #{score.home_team}-#{score.home_score} to #{score.away_team}-#{score.away_score}.
-  Did the home team cover? #{score.home_team_cover}
-  Did the away team cover? #{score.away_team_cover}
-  "
 end
 
 puts "There are now #{Score.count} rows in the scores table"

@@ -13,4 +13,10 @@ Rails.application.routes.draw do
   get "/teams/:id" => "teams#show"
 
   get "/showteams/:id" => "teams#showteam"
+
+  get "/records/:id" => "teams#records"
+
+  get "/homerecords/:id" => "teams#homerecords"
+
+  get "/awayrecords/:id" => "teams#awayrecords"
 end
