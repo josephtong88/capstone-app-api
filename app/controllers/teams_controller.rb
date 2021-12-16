@@ -5,7 +5,7 @@ class TeamsController < ApplicationController
   end
 
   def show
-    scores = Score.where("date>=? AND date<=?", params[:start_date], params[:end_date])
+    scores = Score.where("home_team_id =? OR away_team_id =?", params[:id], params[:id]).where("date>=? AND date<=?", params[:start_date], params[:end_date])
 
     # scores = Score.all.where("home_team_id =? OR away_team_id =?", params[:id], params[:id])
     render json: scores.as_json
