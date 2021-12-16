@@ -44,4 +44,8 @@ class ScoresController < ApplicationController
     score.destroy
     render json: { message: "This score record has been destroyed" }
   end
-end
+  
+  
+
+
+  end
