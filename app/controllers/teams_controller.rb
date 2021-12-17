@@ -13,7 +13,7 @@ class TeamsController < ApplicationController
 
   #shows all scores for team by id param and date param
   def datedshow
-    scores = Score.where("home_team_id =? OR away_team_id =?", params[:id], params[:id]).where("date>=? AND date<=?", params[:start_date], params[:end_date]).where("home_team =? OR away_team =?", "Baltimore Ravens", "Baltimore Ravens")
+    scores = Score.where("home_team_id =? OR away_team_id =?", params[:id], params[:id]).where("date>=? AND date<=?", params[:start_date], params[:end_date]).where("home_team =? OR away_team =?", params[:opp], params[:opp])
 
     render json: scores.as_json
   end
