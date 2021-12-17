@@ -1,16 +1,26 @@
 class TeamsController < ApplicationController
+  #shows all teams
   def index
     teams = Team.all
     render json: teams.as_json
   end
 
+  #shows all scores for team by id param
   def show
-    scores = Score.where("home_team_id =? OR away_team_id =?", params[:id], params[:id]).where("date>=? AND date<=?", params[:start_date], params[:end_date])
-
-    # scores = Score.all.where("home_team_id =? OR away_team_id =?", params[:id], params[:id])
+    scores = Score.where("home_team_id =? OR away_team_id =?", params[:id], params[:id])
     render json: scores.as_json
   end
 
+  #shows all scores for team by id param and date param
+  def datedshow
+    scores = Score.where("home_team_id =? OR away_team_id =?", params[:id], params[:id]).where("date>=? AND date<=?", params[:start_date], params[:end_date]).where("home_team =? OR away_team =?", "Baltimore Ravens", "Baltimore Ravens")
+
+    render json: scores.as_json
+  end
+
+  #
+
+  #shows team name by id param
   def showteam
     team = Team.find_by(id: params[:id])
     render json: team.as_json

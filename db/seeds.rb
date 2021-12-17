@@ -1,5 +1,5 @@
+#1. seeding all teams into DB
 # require "csv"
-
 # csv_text = File.read(Rails.root.join("lib", "seeds", "nflteams.csv"))
 # csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 # csv.each do |row|
@@ -11,8 +11,9 @@
 
 # puts "There are now #{Team.count} rows in the Teams table"
 
+#########################
+#2. Seeing all scores into DB
 require "csv"
-
 csv_text = File.read(Rails.root.join("lib", "seeds", "nfl.csv"))
 csv = CSV.parse(csv_text, :headers => true, :encoding => "ISO-8859-1")
 csv.each do |row|
