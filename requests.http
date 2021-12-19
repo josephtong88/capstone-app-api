@@ -36,7 +36,7 @@ GET http://localhost:3000/datedteams/1?start_date=2021-01-01&end_date=2022-01-01
 GET http://localhost:3000/showteams/1
 
 ###
-GET http://localhost:3000/records/10
+GET http://localhost:3000/records/1
 
 ###
 GET http://localhost:3000/homerecords/10

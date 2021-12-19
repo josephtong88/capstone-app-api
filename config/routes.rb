@@ -14,6 +14,10 @@ Rails.application.routes.draw do
 
   get "/datedteams/:id" => "teams#datedshow"
 
+  get "/datedoppteams/:id" => "teams#datedoppshow"
+
+  get "/oppteams/:id" => "teams#oppshow"
+
   get "/showteams/:id" => "teams#showteam"
 
   get "/records/:id" => "teams#records"
