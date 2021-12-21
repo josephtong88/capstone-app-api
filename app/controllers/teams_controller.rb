@@ -71,7 +71,8 @@ class TeamsController < ApplicationController
     not_cover = home_not_cover + away_not_cover
     ats_tie = home_ats_tie + away_ats_tie
 
-    record = "Straightup Record: #{win} - #{loss} - #{su_tie}. ATS Record: #{cover} - #{not_cover} - #{ats_tie}."
+    record = "Straightup Record: #{win} - #{loss} - #{su_tie} (#{((win.to_f / (win + loss + su_tie)) * 100).round(2)}%). 
+    ATS Record: #{cover} - #{not_cover} - #{ats_tie} (#{((cover.to_f / (cover + not_cover + ats_tie)) * 100).round(2)}%)."
 
     render json: { record: record.as_json, scores: scores.as_json }
   end
@@ -135,7 +136,8 @@ class TeamsController < ApplicationController
     not_cover = home_not_cover + away_not_cover
     ats_tie = home_ats_tie + away_ats_tie
 
-    record = "Straightup Record: #{win} - #{loss} - #{su_tie}. ATS Record: #{cover} - #{not_cover} - #{ats_tie}."
+    record = "Straightup Record: #{win} - #{loss} - #{su_tie} (#{((win.to_f / (win + loss + su_tie)) * 100).round(2)}%). 
+    ATS Record: #{cover} - #{not_cover} - #{ats_tie} (#{((cover.to_f / (cover + not_cover + ats_tie)) * 100).round(2)}%)."
 
     render json: { record: record.as_json, scores: scores.as_json }
   end
@@ -200,7 +202,8 @@ class TeamsController < ApplicationController
     not_cover = home_not_cover + away_not_cover
     ats_tie = home_ats_tie + away_ats_tie
 
-    record = "Straightup Record: #{win} - #{loss} - #{su_tie}. ATS Record: #{cover} - #{not_cover} - #{ats_tie}."
+    record = "Straightup Record: #{win} - #{loss} - #{su_tie} (#{((win.to_f / (win + loss + su_tie)) * 100).round(2)}%). 
+    ATS Record: #{cover} - #{not_cover} - #{ats_tie} (#{((cover.to_f / (cover + not_cover + ats_tie)) * 100).round(2)}%)."
 
     render json: { record: record.as_json, scores: scores.as_json }
   end
@@ -266,7 +269,8 @@ class TeamsController < ApplicationController
     not_cover = home_not_cover + away_not_cover
     ats_tie = home_ats_tie + away_ats_tie
 
-    record = "Straightup Record: #{win} - #{loss} - #{su_tie}. ATS Record: #{cover} - #{not_cover} - #{ats_tie}."
+    record = "Straightup Record: #{win} - #{loss} - #{su_tie} (#{((win.to_f / (win + loss + su_tie)) * 100).round(2)}%). 
+    ATS Record: #{cover} - #{not_cover} - #{ats_tie} (#{((cover.to_f / (cover + not_cover + ats_tie)) * 100).round(2)}%)."
 
     render json: { record: record.as_json, scores: scores.as_json }
   end
@@ -334,8 +338,8 @@ class TeamsController < ApplicationController
     not_cover = home_not_cover + away_not_cover
     ats_tie = home_ats_tie + away_ats_tie
 
-    record = "Straightup Record: #{win} - #{loss} - #{su_tie}. 
-    ATS Record: #{cover} - #{not_cover} - #{ats_tie}."
+    record = "Straightup Record: #{win} - #{loss} - #{su_tie} (#{((win.to_f / (win + loss + su_tie)) * 100).round(2)}%). 
+    ATS Record: #{cover} - #{not_cover} - #{ats_tie} (#{((cover.to_f / (cover + not_cover + ats_tie)) * 100).round(2)}%)."
     render json: record.as_json
   end
 
@@ -446,7 +450,8 @@ class TeamsController < ApplicationController
     not_cover = home_not_cover + away_not_cover
     ats_tie = home_ats_tie + away_ats_tie
 
-    record = "Straightup Record: #{win} - #{loss} - #{su_tie}. ATS Record: #{cover} - #{not_cover} - #{ats_tie}."
+    record = "Straightup Record: #{win} - #{loss} - #{su_tie} (#{((win.to_f / (win + loss + su_tie)) * 100).round(2)}%). 
+    ATS Record: #{cover} - #{not_cover} - #{ats_tie} (#{((cover.to_f / (cover + not_cover + ats_tie)) * 100).round(2)}%)."
 
     render json: { record: record.as_json, scores: scores.as_json }
   end
@@ -492,7 +497,8 @@ class TeamsController < ApplicationController
     not_cover = home_not_cover + away_not_cover
     ats_tie = home_ats_tie + away_ats_tie
 
-    record = "Straightup Record: #{win} - #{loss} - #{su_tie}. ATS Record: #{cover} - #{not_cover} - #{ats_tie}."
+    record = "Straightup Record: #{win} - #{loss} - #{su_tie} (#{((win.to_f / (win + loss + su_tie)) * 100).round(2)}%). 
+    ATS Record: #{cover} - #{not_cover} - #{ats_tie} (#{((cover.to_f / (cover + not_cover + ats_tie)) * 100).round(2)}%)."
 
     render json: { record: record.as_json, scores: scores.as_json }
   end
