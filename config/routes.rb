@@ -20,6 +20,10 @@ Rails.application.routes.draw do
 
   get "/showteams/:id" => "teams#showteam"
 
+  get "/hometeams/:id" => "teams#homeshow"
+
+  get "/awayteams/:id" => "teams#awayshow"
+
   get "/records/:id" => "teams#records"
 
   get "/homerecords/:id" => "teams#homerecords"

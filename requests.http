@@ -46,3 +46,10 @@ GET http://localhost:3000/awayrecords/10
 
 
 
+###
+GET http://localhost:3000/hometeams/1
+
+
+
+###
+GET http://localhost:3000/awayteams/1

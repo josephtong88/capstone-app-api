@@ -24,8 +24,8 @@ csv.each do |row|
   score.away_team = row["Away Team"]
   score.home_score = row["Home Score"]
   score.away_score = row["Away Score"]
-  score.closing_spread_home = row["Home Line Close"]
-  score.closing_spread_away = row["Away Line Close"]
+  score.closing_spread_home = row["Home Line Open"]
+  score.closing_spread_away = score.closing_spread_home * (-1)
   score.save
   if (score.home_score - score.away_score) > -score.closing_spread_home
     score.home_team_cover = "Yes"
